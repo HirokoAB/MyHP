@@ -5,122 +5,66 @@ html{
     letter-spacing: .07em;
 }
 
-header{
-    background-image:url(../img/IMG_2138.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px;
-    width: 100%;
-    height: 800px;
-    display: flex;
-    }
+/*ヘッダー右上の丸*/
 
-
-
-.contactcircle {
+.contactbtn {
     position: fixed;
-    right: 20px;
+    right: 40px;
     top: 40px;
 
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #fff100;
-    transition-duration: 500ms; 
-}
-
-
-.contactcircle  ul{
-    position: absolute;
-    display: inline-block;
-    top: 13%;
-    left: 20%;
-    color: #fff;
-    font-size: 12pt;
-    text-align: right;
-}
-
-.contactcircle ul:hover {
-    right: 30px;
-    top: 30px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #C67595;
-    color: white; 
-    transition-duration: 500ms;
-}
-
-
-.contactcircle li:nth-child(2) {
-    text-align: center;
-    font-size: 25pt;
-    font-weight: bold;
-    margin-top: 5px;
-    font-family: 'SignPainter',sans-serif;
-}
-.contentcircle{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    margin-right:40px;
-    margin-left: 40px;
-    margin-top: 15px;
-}
-
-.s1, .s2, .s3{
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    border: dashed 0.5px;
-    display:flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    animation:blinkanime 3s infinite alternate;
-
-
-}
-
-.s1, .s2, .s3 li{
-    color:black;
-    display:flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.6rem;
-    
-}
-
-.contentcircle  a {
-    text-decoration:none;
-}
-
-.s1, .s2, .s3 a: hover {
-    border:solid;
-    border-color: skyblue;
-}
- 
-.welcome{
+    background-color: #fff100;
+    transition-duration: 700ms;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
 }
-    
-.welcomelogo{
-    display: flex;
-    justify-content: center;
-    margin-right: 10px;
-    margin-top: 150px;
-    color: black;
+
+
+.contactbtn:hover {
+    background-color: #C67595;
+    color: white; 
+    transition-duration: 700ms;
+}
+
+
+.contactbtn  ul{
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    left: 20%;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;;
+    text-align: center;
+
+}
+
+
+.contactbtn li:nth-child(2) {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 7%;
+    font-family: 'SignPainter',sans-serif;
+}
+
+/*ここまでヘッダー*/
+
+/*ここからメイン*/
+
+.main-for-fix{
+    position: absolute;
+    top:200px;
+}
+
+.title{
+    color: #708090;
     font-family: /*'Courier',*/'SignPainter'/*,'klee',sans-serif*/;
     font-size: 5rem;
 }
 
-.welcomelogo span{
+.title span{
 /*    font-family: 'SignPainter';*/
     font-size:5rem;
     color:#fff100;
@@ -137,37 +81,129 @@ header{
         }
     }
 
-.content::after{
+
+.btnfix{
+
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.btnlist{
+    display: flex;
+    text-align: center;
+    justify-content: space-between
+}
+
+.bt {
+    
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    border-color: #DDD;
+    border-radius: 50%;
+    border: dashed 0.5px;
+
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation:blinkanime 3s infinite alternate;
+}
+
+.bt:hover{
+    border:solid 1px;
+    border-color: skyblue;
+}
+
+
+.bt li{
+    color:black;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;    
+    animation: none;
+    
+}
+
+.mainmenu a {
+    text-decoration:none;
+}
+ 
+.mainmenu{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.dmbt::after{
     display: flex;
     justify-content: center;
     margin-top: 30px;
     content: "Click here to go";
-    font-size:0.3rem;
-}
-
-.contactbtn{
-    
+    font-size:0.7em;
 }
 
 
+.mainmenu{
+    background-image: url(../img/backimg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    height: 900px;
 
-main{
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
+}   
+
+/*ここまでメイン・ここからアサイド*/
+
+aside{
+    position: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    text-align: center;
+/*
+    background-color: #ddd;
+    margin:10% 5% 0 5%;*/
+
 }
 
 .introduce{
-    width: 48%;
-    display: flex;    
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
+    display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    margin: 10% 30%;
+    position: relative;
+    padding: 0.5em 1em;
+    border: solid 0.5px ;
+}
+
+.selfy{
+    border-radius: 50%;
+    margin-top: 50px;
+    height: 120px;
+    width: 120px;
+}
+
+.introduce ul{
+    text-align: left;
     line-height: 1.8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.greeting {
+    font-size: 1.2rem;    
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    padding: 0 9px;
+    line-height: 1;
+    background-color: white;
 }
 
 .logo {
@@ -177,18 +213,8 @@ main{
     font-size:1.05rem;
 }
 
+/*ここで導入終了*/
 
-.selfy{
-    border-radius: 50%;
-    margin-top: 30px;
-    height: 15vw;
-    width: 25vh;
-}
-
-.introduce p{
-    margin-top: 20px;
-    font-size:0.95rem;
-}
 
 .aboutme{
     display: flex;    
@@ -203,7 +229,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
 }
 
 .logo {
@@ -374,10 +399,163 @@ footer .footer-right{
     margin-right: 80px;
 }
 
+@media screen and (max-width:1200px){
+
+    .content{
+        margin-right: 10%;
+        margin-left: 10%; 
+    }
+    
+    
 
 
 
+    .selfy{
+    border-radius: 50%;
+    margin-top: 30px;
+    height: 20vh;
+    width: 20vw;
+    }
 
+
+}
+
+/*タブレット想定*/
+
+/*@media screen and (max-width:960px){
+    
+    .selfy{
+    border-radius: 50%;
+    margin-top: 30px;
+    height: 15vh;
+    width: 25vw;
+}
+        
+    }*/
+       /*curricurum*ここまで*/
+
+/*    .contact{
+        height: 100%;
+        padding:10px 20px;
+    }
+    
+    .contact .form{
+        flex-flow: column nowrap;
+        margin: 30px 0;
+
+    }
+    .form-left{
+        margin-right:0;
+        margin-bottom: 30px;
+
+        }
+     .form .name
+     .form .email{
+        width:80%;
+
+        }   
+    .form .inquify{
+        width:80%;
+    }
+    .contact button{
+        font-size: 20px;
+        padding: 5px 40px;
+        box-sizing: border-box;
+    }
+    
+}*/
+/*タブレット対応ここまで・スマフォ対応ここから*/
+/*screenがある場合はandが必要*/
+
+/*@media screen and (max-width:480px){
+    body{min-width:375px;
+}
+*/
+/**        min-width:375px;*/
+    
+        /*シードくんマージン左２０px*/
+/*        .icon{
+            margin-left: 20px;
+        }
+        .icon span,
+        .header-right{
+            display: none;
+        }
+   
+        .title{
+        font-size:30px;
+
+    }
+        .guideline{
+        margin-top: 30px;
+        font-size:24px;
+        font-weight: normal;
+    }
+    .btn-group{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-top: 40px;
+    }
+  .btn{
+    height: 48px;
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+    }
+    .btn-group:nth-child(1){
+        margin-top: 0px;
+    }
+
+    .sub-tite{
+        font-size: 24px;
+    }
+    .img-box{
+        flex-flow: column nowrap;
+    }
+    .img-box li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .img-box li :first-child{
+    margin-top: 0px;
+    }
+
+    .img-box li span{
+    font-size: 16px;
+    margin-top: 20px;
+    }
+    /*curruculumここまで*/
+    /*contactここから*/    
+    .form .name,
+    .form .email{
+        height: 30px;
+    }
+    .form .inquiry{
+        height: 50px;
+    }
+    /*contactここまで*/
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .icon{
+    display: none;
+    }
+
+    footer .footer-right{
+        margin-right: 0;
+    }
+
+} 
+*/
 
 /*.content{
     display: flex;
