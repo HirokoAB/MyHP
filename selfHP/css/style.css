@@ -66,7 +66,6 @@ html{
 
 .title span{
 /*    font-family: 'SignPainter';*/
-    font-size:5rem;
     color:#fff100;
     animation:blinkanime 1s infinite alternate;
     margin-bottom: -10pt;
@@ -176,6 +175,7 @@ aside{
     position: relative;
     padding: 0.5em 1em;
     border: solid 0.5px ;
+    font-size: 1.2rem;  
 }
 
 .selfy{
@@ -192,8 +192,7 @@ aside{
     margin-bottom: 50px;
 }
 
-.greeting {
-    font-size: 1.2rem;    
+.greeting {  
     position: absolute;
     display: inline-block;
     top: -13px;
@@ -202,45 +201,46 @@ aside{
     background-color: white;
 }
 
-.logo {
-    text-align: justify;
-    margin-top: 30px;
-    font-weight: bold;
-    font-size:1.05rem;
+.mydata li{
+    font-size: 0.83em;
+
 }
+
 
 /*ここで導入終了*/
 /*ここから写真リスト*/
+
 
 .photocontents{
     display: flex;    
     align-items: center;
     text-align: justify;
     flex-direction: column;
-}
-
-
-.photocontents p{
-    font-size: 0.8rem;
-}
-
-.pics{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
+    font-size: 1.2rem; 
 }
 
 .logo {
+    text-align: justify;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-family: 'Helvetica Neue';
-    justify-content: center;
+    font-weight: bold;
     color: black;
     background: linear-gradient(transparent 50%, yellow 50%);
 }
 
+
+.photocontents p{
+    font-size: 0.7em;
+}
+
+.pics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
 
 .pics ul{
     display:flex;
@@ -294,163 +294,102 @@ footer .footer-right{
     margin-right: 80px;
 }
 
+/*小型pc対応*/
+
 @media screen and (max-width:1200px){
 
-    .content{
-        margin-right: 10%;
-        margin-left: 10%; 
+    .title{
+        font-size: 8rem;
+        margin-top:-100px;
+        }
+    
+    .bt{
+        height: 100px;
+        width:100px;
     }
-    
-    
-
-
 
     .selfy{
     border-radius: 50%;
     margin-top: 30px;
-    height: 20vh;
-    width: 20vw;
+    height: 150px;
+    width: 150px;
     }
 
+    .introduce{
+        font-size: 1.5rem;
+        margin:10% 20%;
+    }
+
+    .pics ul{
+        width: 80vw;
+    }
+    
+    .pics li img{
+    width: 250px;
+    height: 250px;
+    }
 
 }
 
 /*タブレット想定*/
+/*國吉さんここからcssが効きません。効果を見るために極端な数値で書いてあります*/
 
-/*@media screen and (max-width:960px){
+@media screen and (max-width:960px){
+        .title{
+        font-size: 10rem;
+        margin-top:-50px;
+        }
+}
+
+
+@media screen and (max-width:480px){
+    .title{
+        font-size: 20rem;
+        margin-top:-200px;
+        }
     
+    .bt{
+        height: 100px;
+        width:100px;
+    }
+
     .selfy{
     border-radius: 50%;
     margin-top: 30px;
-    height: 15vh;
-    width: 25vw;
+    height: 300px;
+    width: 300px;
+    }
+
+    .introduce{
+        font-size: 1.5rem;
+        margin:10% 20%;
+    }
+
+    .pics ul{
+        width: 80vw;
+    }
+    
+    .pics li img{
+    width: 250px;
+    height: 250px;
+    }
+}    
+
+    
+
+footer{
+    display: flex;
+    justify-content: center;
 }
-        
-    }*/
-       /*curricurum*ここまで*/
 
-/*    .contact{
-        height: 100%;
-        padding:10px 20px;
-    }
-    
-    .contact .form{
-        flex-flow: column nowrap;
-        margin: 30px 0;
-
-    }
-    .form-left{
-        margin-right:0;
-        margin-bottom: 30px;
-
-        }
-     .form .name
-     .form .email{
-        width:80%;
-
-        }   
-    .form .inquify{
-        width:80%;
-    }
-    .contact button{
-        font-size: 20px;
-        padding: 5px 40px;
-        box-sizing: border-box;
-    }
-    
-}*/
-/*タブレット対応ここまで・スマフォ対応ここから*/
-/*screenがある場合はandが必要*/
-
-/*@media screen and (max-width:480px){
-    body{min-width:375px;
+footer .icon{
+display: none;
 }
-*/
-/**        min-width:375px;*/
-    
-        /*シードくんマージン左２０px*/
-/*        .icon{
-            margin-left: 20px;
-        }
-        .icon span,
-        .header-right{
-            display: none;
-        }
-   
-        .title{
-        font-size:30px;
 
-    }
-        .guideline{
-        margin-top: 30px;
-        font-size:24px;
-        font-weight: normal;
-    }
-    .btn-group{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        margin-top: 40px;
-    }
-  .btn{
-    height: 48px;
-    width: 140px;
-    margin-top: 20px;
-    margin-left: 0;
-    font-weight: bold;
-    font-size: 24px;
-    border-radius: 10px;
-    }
-    .btn-group:nth-child(1){
-        margin-top: 0px;
-    }
+footer .footer-right{
+    margin-right: 0;
+}
 
-    .sub-tite{
-        font-size: 24px;
-    }
-    .img-box{
-        flex-flow: column nowrap;
-    }
-    .img-box li{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-    }
-
-    .img-box li :first-child{
-    margin-top: 0px;
-    }
-
-    .img-box li span{
-    font-size: 16px;
-    margin-top: 20px;
-    }
-    /*curruculumここまで*/
-    /*contactここから*/    
-    .form .name,
-    .form .email{
-        height: 30px;
-    }
-    .form .inquiry{
-        height: 50px;
-    }
-    /*contactここまで*/
-    footer{
-        display: flex;
-        justify-content: center;
-    }
-
-    footer .icon{
-    display: none;
-    }
-
-    footer .footer-right{
-        margin-right: 0;
-    }
-
-} 
-*/
 
 
 
