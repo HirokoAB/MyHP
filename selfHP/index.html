@@ -10,18 +10,16 @@
 </head>
 
 
-
 <body>
+
     <header>
-            <a class="btnto"href="#ad">
                 <div class="contactbtn">
-                <ul>
+                <ul id="jump_to_bottom">
                     <li><i class="far fa-envelope"></i><li>
                     <li>Contact<br>me?</li>
                     <li>Click!</li>
                 </ul>
                 </div>
-                </a>
     </header>
     <main class="mainmenu" id="fixed">
         <div class="main-for-fix">
@@ -46,7 +44,7 @@
            
 <aside class="asideback">  
         <!-- 導入です -->
-         <div class="introduce">
+        <div class="introduce">
             <h2 class="greeting">【　自己紹介　】</h2>
             <img class="selfy" src="img/profile.jpg"> 
                 <ul class="mydata">
@@ -56,7 +54,8 @@
                           <li>食べ物 :　お魚　玄米　固いパン</li>
                           <li>趣　味 :　カフェ巡り　水泳　音楽探索</li>
                           <li>特　技 :　お魚捌けます  下らない妄想</li>
-                      </ul>      
+                      </ul>
+                <btn class="mydata_close">×閉じる</btn>    
         </div> 
 
 <!-- ここから自己紹介 -->
@@ -69,23 +68,48 @@
                     <li class="pic2"><img src="img/musubimaru.jpeg" alt=""></li>
                     <li class="pic3"><img src="img/kesennuma.jpg" alt=""></li>
                     <li class="pic4"><img src="img/zaou.jpeg" alt=""></li> 
-                    <li class="pic5"><img src="img/okutopasu.jpeg" alt=""></li>
+                    <li class="pic5"><img src="img/okutopasu.jpeg" alt="octpass" id="oct"></li>
                     <li class="pic6"><img src="img/photo6.jpg" alt=""></li>
                 </ul>
             </div>
+            
+            <div class="modal-content">
+                    <div class="modal-close js-modal-close">
+                        <span>×</span>
+                    </div>
+                    <div class="grid-container">
+                    <div class="grid-item"><a href="http://ms-octopus.jp/"><img title="合格祈願・復興祈願の「オクトパス君」｜南三陸復興ダコの会オフィシャルページ" src="http://capture.heartrails.com/200x150/round/1549924397432?http://ms-octopus.jp/" alt="http://ms-octopus.jp/" target="_blank" width="200" height="200"  /></a><!-- <img src="img/photo9.jpg" alt=""> -->
+                    </div>
+                    <div class="grid-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente omnis id iste sunt voluptas, animi earum ipsam doloribus saepe, cum, neque, fuga et explicabo facere consectetur dolorum harum. Amet, alias</p></div>
+                    </div>
+            </div>
+                <div id="modal-bg" class="js-modal-close"></div>
+            
             <div class="like pics">
                 <a href="index2.html" target="_blank"><h2 class="like logo" id="wtil">What I like</h2></a>
                 <P>好きなものは音楽と本と食べること</P>
                 <ul class="likelist">
-                    <li class="pic7"><img src="img/photo7.jpeg" alt=""></li>
-                    <li class="pic8"><img src="img/photo8.png" alt=""></li>
-                    <li class="pic9"><img src="img/photo9.jpg" alt=""></li>
-                    <li class="pic10"><img src="img/photo10.jpeg" alt=""></li> 
-                    <li class="pic11"><img src="img/photo11.jpeg" alt=""></li>
-                    <li class="pic12"><img src="img/photo12.jpeg" alt=""></li>
+                    <li class="pic7">
+                        <img src="img/photo7.jpeg" alt=""></li>
+                    <li class="pic8">
+                        <img src="img/photo8.png" alt=""></li>
+                    <li class="pic9">
+                        <img src="img/photo9.jpg" alt=""></li>
+                    <li class="pic10">
+                        <img src="img/photo10.jpeg" alt=""></li> 
+                    <li class="pic11">
+                        <img src="img/photo11.jpeg" alt=""></li>
+                    <li class="pic12">
+                        <img src="img/photo12.jpeg" alt=""></li>
                 </ul>
-                <a href="index2.html" target="_blank"><p class="page2 logo"><i class="fas fa-external-link-alt"></i></i> Go to Music list</p></a>
+                <a href="index2.html" target="_blank">
+                    <p class="page2 logo">
+                        <i class="fas fa-external-link-alt"></i><p> Go to Music list</p></a>
                 </div>
+            
+
+
+
             <div class="dream pics">
                 <h2 class="dream logo" id="dmli">My dream</h2>
                 <P>夢はたくさん</P>
@@ -99,23 +123,28 @@
 </aside>
 
 <!-- ここからフッター -->
-<footer>
+<footer id="footer">
     <div class="contactme"  id="contme">
-                <h2 class="adress" id="ad"><span>【　お問い合わせ先　】</span></h2>
-                <ul class="contactlist">
-                    <li class="mail"><i class="far fa-envelope fa-2x"></i></li>
-                    <a href="https://www.facebook.com/humhaha">
-                    <li class="facebook"><i class="fab fa-facebook-square fa-2x"></i></li>
-                    </a>
-                    <a href="https://www.instagram.com/ms.hoi/">
-                    <li class="instaglam"><i class="fab fa-instagram fa-2x"></i></li>
-                    </a>
-                </ul>    
-            </div> 
+        <dt id="contactlist">✳︎お問い合わせ先✴︎</dt>
+            <p class="contactlist">
+                <dd class="mail"><i class="far fa-envelope"></i></dd>
+                <dd class="facebook">
+                    <a href="https://www.facebook.com/humhaha" target="_blank">
+                    <i class="fab fa-facebook-square"></i></a>
+                </dd>
+
+                <dd class="instaglam">
+                <a href="https://www.instagram.com/ms.hoi/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                </a>
+                </dd>
+            </p>   
+    </div> 
     </footer>  
 
 
 
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
