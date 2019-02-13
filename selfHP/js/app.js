@@ -6,10 +6,9 @@ $(window).scroll(function() {
 });
 
 $('.contactbtn').on('click',function(){
-    $('#footer').animate({ scrollTop:0 }, 500);
-    console.log(hogehogeeeee)
-});
-
+    $('html,body').animate({ scrollTop: $("#footer").offset().top }, 500);
+    
+  });
 
 
 //自己紹介の表示と非表示
